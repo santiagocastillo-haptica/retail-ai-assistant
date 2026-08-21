@@ -14,16 +14,15 @@ El Explorador de Sabores y La Cazadora de Ofertas.
   ningún agente — se puede agregar más adelante si se cuenta con esa data, con el mismo
   formato que se usó en el proyecto de referencia (Nexu Sims).
 
-No es necesario tocar `id`, `avatarColor`, `appearance`, `archetype`, `archetypeStat` ni
-`voiceProfile` a menos que se quiera ajustar la identidad visual/sonora de cada personaje.
-`appearance` controla el avatar ilustrado (`skinTone`, `hairColor`,
-`hairStyle`: `"ponytail" | "short" | "long" | "bun" | "balding"`). `archetype`/`archetypeStat` son el
+No es necesario tocar `id`, `avatarColor`, `appearance`, `archetype` ni `archetypeStat` a
+menos que se quiera ajustar la identidad visual de cada personaje. `appearance` controla
+el avatar ilustrado (`skinTone`, `hairColor`, `hairStyle`:
+`"ponytail" | "short" | "long" | "bun" | "balding"`). `archetype`/`archetypeStat` son el
 sello y estadística que se muestran en la tarjeta de selección de expediente.
 
-`voiceProfile.elevenLabsVoiceId` es el Voice ID de ElevenLabs para ese personaje (ver
-[Voice Library](https://elevenlabs.io/app/voice-library)). Hoy está vacío para los 4 — la
-voz cae de vuelta a la Web Speech API del navegador usando `pitch`/`rate`. No rompe nada
-dejarlo así mientras se eligen las voces.
+La plataforma es solo de texto — no tiene voz (ni entrada por micrófono ni salida por
+audio). Si en el futuro se quiere agregar voz, sería un desarrollo nuevo, no una
+reactivación de algo existente.
 
 ## Capas del system prompt
 

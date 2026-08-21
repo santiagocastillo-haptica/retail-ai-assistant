@@ -3,7 +3,7 @@
 Plataforma estilo videojuego (inspirada en Ace Attorney) para hablar 1 a 1 con agentes IA
 (vía Claude) que representan arquetipos de comportamiento de clientes del segmento retail
 (compra de súper) de Rappi. Elige un "expediente" en la pantalla principal y entra a la
-sala de investigación a interrogar al personaje, con chat en streaming, voz y micrófono.
+sala de investigación a interrogar al personaje, con chat de texto en streaming.
 
 Los 3 agentes están poblados con perfiles de comportamiento de compra (hábitos de
 planificación, dolores principales, nivel de delegación por categoría y paradigma de
@@ -15,7 +15,7 @@ La Cazadora de Ofertas — ver
 
 - `backend/` — Node.js + Express + `@anthropic-ai/sdk`. Streaming de chat vía SSE.
 - `frontend/` — React + Vite + Zustand. Pantalla de selección de expediente, sala de
-  investigación con diálogo tipo máquina de escribir, voz (Web Speech API).
+  investigación con diálogo tipo máquina de escribir (solo texto, sin voz).
 
 ## Setup local
 

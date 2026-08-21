@@ -52,7 +52,7 @@ Cuando Render termine el primer deploy, cada servicio tiene su propia URL
 
 - El plan free de Render "duerme" el backend tras ~15 min sin tráfico; el primer
   request después de eso tarda unos segundos en despertar. Normal para un demo/taller.
-- Nunca pongas `ANTHROPIC_API_KEY`, `ELEVENLABS_API_KEY` ni `FIREBASE_SERVICE_ACCOUNT_BASE64`
+- Nunca pongas `ANTHROPIC_API_KEY` ni `FIREBASE_SERVICE_ACCOUNT_BASE64`
   en `render.yaml` ni en el repo — solo en el dashboard de Render (por eso están como
   `sync: false`). Si agregas una variable nueva a `render.yaml` para un servicio que ya
   existe, Render no la pide sola — tienes que agregarla a mano en la pestaña **Environment**

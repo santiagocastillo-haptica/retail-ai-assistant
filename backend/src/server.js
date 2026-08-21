@@ -3,7 +3,6 @@ const express = require('express');
 const cors = require('cors');
 
 const chatRouter = require('./routes/chat');
-const ttsRouter = require('./routes/tts');
 const { agentConfigs } = require('./agents');
 
 const app = express();
@@ -13,9 +12,6 @@ const LOCALHOST_ORIGIN_RE = /^https?:\/\/(localhost|127\.0\.0\.1):\d+$/;
 
 if (!process.env.ANTHROPIC_API_KEY) {
   console.warn('[warn] ANTHROPIC_API_KEY no está configurada. Copia .env.example a .env y agrega tu clave.');
-}
-if (!process.env.ELEVENLABS_API_KEY) {
-  console.warn('[warn] ELEVENLABS_API_KEY no está configurada. La voz caerá al Web Speech API del navegador.');
 }
 
 // Acepta el origen configurado explícitamente, más cualquier puerto local
@@ -40,12 +36,11 @@ app.get('/api/health', (req, res) => {
 app.get('/api/agents', (req, res) => {
   const publicAgents = agentConfigs
     .filter((agent) => agent.active !== false)
-    .map(({ id, name, avatarColor, appearance, voiceProfile, personalitySummary, archetype, archetypeStat }) => ({
+    .map(({ id, name, avatarColor, appearance, personalitySummary, archetype, archetypeStat }) => ({
       id,
       name,
       avatarColor,
       appearance,
-      voiceProfile,
       personalitySummary,
       archetype,
       archetypeStat,
@@ -54,7 +49,6 @@ app.get('/api/agents', (req, res) => {
 });
 
 app.use('/api/chat', chatRouter);
-app.use('/api/tts', ttsRouter);
 
 app.listen(PORT, () => {
   console.log(`Backend de agentes-sims escuchando en http://localhost:${PORT}`);
