@@ -30,6 +30,7 @@ export default function CaseSelect() {
                 />
               </div>
               <div className="case-card__name">{agent.name}</div>
+              <div className="case-card__archetype">{agent.archetype}</div>
               <div className="case-card__cta">Investigar →</div>
             </button>
           );

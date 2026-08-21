@@ -158,6 +158,12 @@
   font-size: 15px;
 }
 
+.case-card__archetype {
+  margin-top: 2px;
+  font-size: 12px;
+  color: #8a8980;
+}
+
 .case-card__cta {
   margin-top: 14px;
   font-size: 13px;
