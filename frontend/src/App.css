@@ -181,8 +181,8 @@
 
 .investigation-room__back {
   background: #fff;
-  border: 1px solid #d8d7f5;
-  color: #3b3aca;
+  border: 1px solid #ffd6cc;
+  color: #fe3f23;
   padding: 8px 14px;
   border-radius: 8px;
   cursor: pointer;
@@ -192,7 +192,7 @@
 }
 
 .investigation-room__back:hover {
-  border-color: #3b3aca;
+  border-color: #fe3f23;
 }
 
 .investigation-room__layout {
@@ -204,7 +204,7 @@
 
 .avatar-panel {
   flex: 1;
-  background: #3b3aca;
+  background: #fe3f23;
   border-radius: 16px;
   padding: 1.5rem 1.25rem;
   display: flex;
@@ -233,8 +233,8 @@
   display: inline-flex;
   align-items: center;
   gap: 4px;
-  background: #5453d6;
-  color: #e4e3fc;
+  background: #ff6a45;
+  color: #ffe4dc;
   font-size: 12px;
   font-weight: 500;
   padding: 3px 10px;
@@ -302,7 +302,7 @@
 
 .avatar-panel__btn--primary {
   background: #fff;
-  color: #3b3aca;
+  color: #fe3f23;
   border: none;
   margin-top: 4px;
 }
@@ -352,7 +352,7 @@
 
 .bubble--user {
   align-self: flex-end;
-  background: #3b3aca;
+  background: #fe3f23;
   color: #fff;
   border-radius: 14px 14px 2px 14px;
 }
@@ -374,7 +374,7 @@
 .conversation-panel__input-row input {
   flex: 1;
   border-radius: 10px;
-  border: 1px solid #d8d7f5;
+  border: 1px solid #ffd6cc;
   padding: 9px 12px;
   font-family: inherit;
   font-size: 14px;
@@ -384,8 +384,8 @@
 
 .conversation-panel__mic {
   background: #fff;
-  color: #3b3aca;
-  border: 1px solid #d8d7f5;
+  color: #fe3f23;
+  border: 1px solid #ffd6cc;
   border-radius: 10px;
   width: 36px;
   height: 36px;
@@ -404,7 +404,7 @@
 }
 
 .conversation-panel__send {
-  background: #3b3aca;
+  background: #fe3f23;
   color: #fff;
   border: none;
   border-radius: 10px;
