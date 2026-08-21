@@ -5,11 +5,10 @@ Plataforma estilo videojuego (inspirada en Ace Attorney) para hablar 1 a 1 con a
 (compra de súper) de Rappi. Elige un "expediente" en la pantalla principal y entra a la
 sala de investigación a interrogar al personaje, con chat en streaming, voz y micrófono.
 
-Los 4 agentes están poblados con perfiles de comportamiento de compra (hábitos de
+Los 3 agentes están poblados con perfiles de comportamiento de compra (hábitos de
 planificación, dolores principales, nivel de delegación por categoría y paradigma de
-interacción ideal con un asistente IA): La Mamá Ocupada y Pragmática, El Curador
-Gastronómico Experiencial, El Planificador Mensual Sistemático y La Cazadora de Ofertas
-por Impulso y Memoria — ver
+interacción ideal con un asistente IA): El Organizador del Mes, El Explorador de Sabores y
+La Cazadora de Ofertas — ver
 [backend/src/agents/README.md](backend/src/agents/README.md).
 
 ## Estructura

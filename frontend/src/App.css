@@ -30,6 +30,12 @@
   border-bottom: 1px solid #ecebe8;
 }
 
+.app-header__logo {
+  height: 28px;
+  width: auto;
+  display: block;
+}
+
 .app-header__divider {
   width: 1px;
   height: 20px;
